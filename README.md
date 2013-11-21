@@ -1,4 +1,4 @@
 Auto Timor Leste Official Site
 ==============================
 
-We'll need secrets!?
+Establish secrets to be loaded into wp-config. For database secrets and encryption key secrets.

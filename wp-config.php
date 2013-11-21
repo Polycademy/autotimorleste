@@ -1,5 +1,7 @@
 <?php
 
+define('ENVIRONMENT', 'development');
+
 /**
  * Automatic Url + Content Dir/Url Detection for Wordpress
  */
@@ -26,24 +28,34 @@ define('WP_SITEURL', $wp_url); //url to wordpress installation
 define('WP_CONTENT_DIR', $wp_content_dir); //wp-content dir
 define('WP_CONTENT_URL', $wp_content_url); //wp-content url
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'autotimorleste');
+/**
+ * Secrets
+ */
+require_once('Secrets.php');
+Secrets::load();
 
-/** MySQL database username */
-define('DB_USER', 'root');
+/**
+ * MySQL settings
+ */
+if(ENVIRONMENT == 'production'){
 
-/** MySQL database password */
-define('DB_PASSWORD', '');
+	define('DB_NAME', $_ENV['secrets']['database_name']);
+	define('DB_USER', $_ENV['secrets']['database_user']);
+	define('DB_PASSWORD', $_ENV['secrets']['database_pass']);
+	define('DB_HOST', $_ENV['secrets']['database_host']);
+	define('DB_CHARSET', 'utf8');
+	define('DB_COLLATE', '');
 
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
+}else{
 
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+	define('DB_NAME', 'autotimorleste');
+	define('DB_USER', 'root');
+	define('DB_PASSWORD', '');
+	define('DB_HOST', 'localhost');
+	define('DB_CHARSET', 'utf8');
+	define('DB_COLLATE', '');
 
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+}
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -54,14 +66,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'y_-,F_y@Pre*nh2=xVr7U?-%+Yw(2R {jb:j@6ko2L$m[ t?-]Pty.?7k+p)3Cj>');
-define('SECURE_AUTH_KEY',  '0-ggn~=3?KEE?JIzhw;(e2J$+4(!K/ .Xa/L[cdCp?Ih0AL3Of8#-h@oXYA+W31;');
-define('LOGGED_IN_KEY',    '[;%?W,gxWPxfYIglik!0Y%)>,k/*ksW yJ9f<WfF:sJ6b]A<R>=%UOZ#AEnMtFWl');
-define('NONCE_KEY',        'GgXFMj_^88acK_+-a1V:_*JO(z`odUqTt^1|+S$Tcg[uD((R%YVv+%CZB5GPa:`h');
-define('AUTH_SALT',        'hz|yHN/f=05cccX8Hf:!=-E%gKmo:?-{+iIr-m4MKm+@H=R})m2N[DFeVfKnFenN');
-define('SECURE_AUTH_SALT', 'ApF.dlbfa((`3)%;$+Ok;aecD^+fwL+)LH}K+GfMD(|+g YWQ.OqAi&OBGYq2S< ');
-define('LOGGED_IN_SALT',   '%9N4X]*|w/6Xsy4&d@Z=m9buT5E -U-4]7:_7ntQ6~vBYK1?F@iSj&n@*0lkw{A0');
-define('NONCE_SALT',       'M^z`Q&6$oXihS[X@])&Aq.~qZY9#.?b4rN%?J|DonyTm?+NCO+a:Rp4+S#aZ7T< ');
+define('AUTH_KEY',         $_ENV['secrets']['auth_key']);
+define('SECURE_AUTH_KEY',  $_ENV['secrets']['secure_auth_key']);
+define('LOGGED_IN_KEY',    $_ENV['secrets']['logged_in_key']);
+define('NONCE_KEY',        $_ENV['secrets']['nonce_key']);
+define('AUTH_SALT',        $_ENV['secrets']['auth_salt']);
+define('SECURE_AUTH_SALT', $_ENV['secrets']['secure_auth_salt']);
+define('LOGGED_IN_SALT',   $_ENV['secrets']['logged_in_salt']);
+define('NONCE_SALT',       $_ENV['secrets']['nonce_salt']);
 
 /**#@-*/
 
