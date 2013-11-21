@@ -22,7 +22,8 @@
 	],
 	"require":{
 		"php": ">=5.3.0",
-		"wordpress": "3.7.1"
+		"wordpress": "3.7.1",
+		"wpackagist/wp-migrate-db": "0.5"
 	},
 	"config": {
 		"bin-dir": "bin/",

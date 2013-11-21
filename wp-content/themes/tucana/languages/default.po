@@ -1,0 +1,589 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tucana theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-19 23:24+0700\n"
+"PO-Revision-Date: 2012-07-19 23:24+0700\n"
+"Last-Translator: imediapixel <imediapixel@gmail.com>\n"
+"Language-Team: Indonez <templates@indonez.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Country: INDONESIA\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:4
+msgid "404"
+msgstr ""
+
+#: ../404.php:14
+msgid "Page Not Found"
+msgstr ""
+
+#: ../archive.php:14
+msgid "Archive for "
+msgstr ""
+
+#: ../archive.php:40
+#: ../search.php:43
+msgid "Posted by "
+msgstr ""
+
+#: ../archive.php:40
+#: ../search.php:43
+msgid "Categories "
+msgstr ""
+
+#: ../archive.php:40
+#: ../search.php:43
+msgid "Comments "
+msgstr ""
+
+#: ../archive.php:47
+#: ../search.php:50
+msgid "more"
+msgstr ""
+
+#: ../comments.php:4
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: ../comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:26
+msgid "Trackbacks"
+msgstr ""
+
+#: ../comments.php:40
+msgid "&laquo;Older Comments"
+msgstr ""
+
+#: ../comments.php:41
+msgid "Newer Comments&raquo;"
+msgstr ""
+
+#: ../comments.php:48
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:54
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../comments.php:56
+msgid "Cancel Reply"
+msgstr ""
+
+#: ../comments.php:60
+msgid "You must be"
+msgstr ""
+
+#: ../comments.php:60
+msgid "logged in"
+msgstr ""
+
+#: ../comments.php:60
+msgid "to post a comment"
+msgstr ""
+
+#: ../comments.php:68
+msgid "Logged in as"
+msgstr ""
+
+#: ../comments.php:70
+msgid "Log out &raquo;"
+msgstr ""
+
+#: ../comments.php:72
+#: ../contact-form.php:61
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:72
+#: ../comments.php:74
+msgid "(required)"
+msgstr ""
+
+#: ../comments.php:74
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:76
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:81
+#: ../contact-form.php:70
+msgid "Message"
+msgstr ""
+
+#: ../comments.php:84
+msgid "Please note: comment moderation is enabled and may delay your comment. There is no need to resubmit your comment."
+msgstr ""
+
+#: ../comments.php:86
+msgid "Submit"
+msgstr ""
+
+#: ../contact-form.php:55
+msgid "Your message has been sent successfully. Thank you!"
+msgstr ""
+
+#: ../contact-form.php:64
+msgid "E-mail"
+msgstr ""
+
+#: ../contact-form.php:67
+msgid "Subject"
+msgstr ""
+
+#: ../contact-form.php:77
+msgid "Please wait.."
+msgstr ""
+
+#: ../search.php:4
+msgid "Search for "
+msgstr ""
+
+#: ../search.php:14
+msgid "Search result for "
+msgstr ""
+
+#: ../single-dealer.php:4
+msgid "Dealer"
+msgstr ""
+
+#: ../single-dealer.php:16
+msgid " Dealer"
+msgstr ""
+
+#: ../single.php:4
+msgid "blog"
+msgstr ""
+
+#: ../single.php:15
+msgid "Blog"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:456
+msgid "Last Backup : "
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:516
+msgid "Upload"
+msgstr ""
+
+#: ../admin/front-end/options.php:42
+#: ../admin/front-end/options.php:66
+msgid "Save All Changes"
+msgstr ""
+
+#: ../admin/front-end/options.php:67
+msgid "Options Reset"
+msgstr ""
+
+#: ../admin/functions/functions.mediauploader.php:20
+msgid "Options"
+msgstr ""
+
+#: ../admin/functions/functions.mediauploader.php:210
+msgid "Gallery"
+msgstr ""
+
+#: ../admin/functions/functions.mediauploader.php:210
+msgid "Previously Uploaded"
+msgstr ""
+
+#: ../admin/functions/functions.php:12
+msgid "Columns"
+msgstr ""
+
+#: ../admin/functions/functions.php:13
+msgid "Elements"
+msgstr ""
+
+#: ../admin/functions/functions.php:14
+msgid "List Style"
+msgstr ""
+
+#: ../admin/functions/functions.php:15
+msgid "Message Box"
+msgstr ""
+
+#: ../admin/functions/functions.php:16
+msgid "One Fourth"
+msgstr ""
+
+#: ../admin/functions/functions.php:17
+msgid "One Fourth Last"
+msgstr ""
+
+#: ../admin/functions/functions.php:18
+msgid "One Third"
+msgstr ""
+
+#: ../admin/functions/functions.php:19
+msgid "One Third Last"
+msgstr ""
+
+#: ../admin/functions/functions.php:20
+msgid "One Half"
+msgstr ""
+
+#: ../admin/functions/functions.php:21
+msgid "One Half Last"
+msgstr ""
+
+#: ../admin/functions/functions.php:22
+msgid "Two Third"
+msgstr ""
+
+#: ../admin/functions/functions.php:23
+msgid "Three Fourth"
+msgstr ""
+
+#: ../admin/functions/functions.php:24
+msgid "One Fifth"
+msgstr ""
+
+#: ../admin/functions/functions.php:25
+msgid "One Fifth Last"
+msgstr ""
+
+#: ../admin/functions/functions.php:26
+msgid "Dropcap 1"
+msgstr ""
+
+#: ../admin/functions/functions.php:27
+msgid "Dropcap 2"
+msgstr ""
+
+#: ../admin/functions/functions.php:28
+msgid "Dropcap 3"
+msgstr ""
+
+#: ../admin/functions/functions.php:29
+msgid "Pullquote Left"
+msgstr ""
+
+#: ../admin/functions/functions.php:30
+msgid "Pullquote Right"
+msgstr ""
+
+#: ../admin/functions/functions.php:31
+msgid "Tabs"
+msgstr ""
+
+#: ../admin/functions/functions.php:32
+msgid "Toggle"
+msgstr ""
+
+#: ../admin/functions/functions.php:33
+msgid "Image"
+msgstr ""
+
+#: ../admin/functions/functions.php:34
+msgid "Google Map"
+msgstr ""
+
+#: ../admin/functions/functions.php:35
+msgid "Youtube"
+msgstr ""
+
+#: ../admin/functions/functions.php:36
+msgid "Vimeo"
+msgstr ""
+
+#: ../admin/functions/functions.php:37
+msgid "Buttons"
+msgstr ""
+
+#: ../admin/functions/functions.php:38
+msgid "Bullet List"
+msgstr ""
+
+#: ../admin/functions/functions.php:39
+msgid "Star List"
+msgstr ""
+
+#: ../admin/functions/functions.php:40
+msgid "Arrow List"
+msgstr ""
+
+#: ../admin/functions/functions.php:41
+msgid "Green Arrow List"
+msgstr ""
+
+#: ../admin/functions/functions.php:42
+msgid "Delete List"
+msgstr ""
+
+#: ../admin/functions/functions.php:43
+msgid "Check List"
+msgstr ""
+
+#: ../admin/functions/functions.php:44
+msgid "Info Box"
+msgstr ""
+
+#: ../admin/functions/functions.php:45
+msgid "Success Box"
+msgstr ""
+
+#: ../admin/functions/functions.php:46
+msgid "Warning Box"
+msgstr ""
+
+#: ../admin/functions/functions.php:47
+msgid "Error Box"
+msgstr ""
+
+#: ../functions/metabox.php:8
+msgid "Custom Slideshow URL"
+msgstr ""
+
+#: ../functions/metabox.php:9
+msgid "Custom URL for slideshow items."
+msgstr ""
+
+#: ../functions/metabox.php:14
+msgid "Features Highlight"
+msgstr ""
+
+#: ../functions/metabox.php:15
+msgid "Add product featuire highlights in a new line-separated, eg.<br/> Feature 1<br/>Feature 2"
+msgstr ""
+
+#: ../functions/metabox.php:29
+msgid "Product Highlight"
+msgstr ""
+
+#: ../functions/metabox.php:30
+msgid "Add product featuire highlights in a new line, eg.<br/> Feature 1<br/>Feature 2"
+msgstr ""
+
+#: ../functions/metabox.php:35
+msgid "Custom Product Url"
+msgstr ""
+
+#: ../functions/metabox.php:36
+msgid "Please enter your custom url for your product,if not setted then will be linked to actual product page"
+msgstr ""
+
+#: ../functions/metabox.php:49
+msgid "Short Description"
+msgstr ""
+
+#: ../functions/metabox.php:50
+msgid "Add short description for your page."
+msgstr ""
+
+#: ../functions/metabox.php:55
+msgid "Sidebar Position"
+msgstr ""
+
+#: ../functions/metabox.php:56
+msgid "Select default page sidebar widget"
+msgstr ""
+
+#: ../functions/metabox.php:222
+msgid "Page options"
+msgstr ""
+
+#: ../functions/metabox.php:223
+msgid "Slideshow options"
+msgstr ""
+
+#: ../functions/metabox.php:225
+msgid "Product options"
+msgstr ""
+
+#: ../functions/post-types.php:5
+msgid "Slideshow"
+msgstr ""
+
+#: ../functions/post-types.php:6
+msgid "slideshow"
+msgstr ""
+
+#: ../functions/post-types.php:7
+#: ../functions/post-types.php:56
+#: ../functions/post-types.php:110
+msgid "Add New"
+msgstr ""
+
+#: ../functions/post-types.php:8
+msgid "Add New slideshow"
+msgstr ""
+
+#: ../functions/post-types.php:9
+msgid "Edit slideshow"
+msgstr ""
+
+#: ../functions/post-types.php:10
+msgid "New slideshow"
+msgstr ""
+
+#: ../functions/post-types.php:11
+msgid "View slideshow"
+msgstr ""
+
+#: ../functions/post-types.php:12
+msgid "Search slideshow"
+msgstr ""
+
+#: ../functions/post-types.php:13
+msgid "No slideshow found"
+msgstr ""
+
+#: ../functions/post-types.php:14
+msgid "No slideshow found in Trash"
+msgstr ""
+
+#: ../functions/post-types.php:54
+#: ../functions/post-types.php:55
+msgid "Products"
+msgstr ""
+
+#: ../functions/post-types.php:57
+#: ../functions/post-types.php:111
+msgid "Add New Products"
+msgstr ""
+
+#: ../functions/post-types.php:58
+msgid "Edit Products"
+msgstr ""
+
+#: ../functions/post-types.php:59
+msgid "New Products"
+msgstr ""
+
+#: ../functions/post-types.php:60
+msgid "View Products"
+msgstr ""
+
+#: ../functions/post-types.php:61
+msgid "Search Products"
+msgstr ""
+
+#: ../functions/post-types.php:62
+msgid "No Products found"
+msgstr ""
+
+#: ../functions/post-types.php:63
+msgid "No Products found in Trash"
+msgstr ""
+
+#: ../functions/post-types.php:95
+#: ../functions/post-types.php:96
+msgid "Product Categories"
+msgstr ""
+
+#: ../functions/post-types.php:112
+msgid "Edit Dealer"
+msgstr ""
+
+#: ../functions/post-types.php:113
+msgid "New Dealer"
+msgstr ""
+
+#: ../functions/post-types.php:114
+msgid "View Dealer"
+msgstr ""
+
+#: ../functions/post-types.php:115
+msgid "Search Dealer"
+msgstr ""
+
+#: ../functions/post-types.php:116
+msgid "No Dealer found"
+msgstr ""
+
+#: ../functions/post-types.php:117
+msgid "No Dealer found in Trash"
+msgstr ""
+
+#: ../functions/theme-functions.php:39
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions/theme-functions.php:44
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions/theme-functions.php:44
+msgid "(Edit)"
+msgstr ""
+
+#: ../functions/theme-functions.php:137
+msgid "Latest news"
+msgstr ""
+
+#: ../functions/theme-functions.php:176
+msgid "Details"
+msgstr ""
+
+#: ../functions/theme-functions.php:178
+msgid "Buy Now"
+msgstr ""
+
+#: ../functions/theme-functions.php:313
+#: ../functions/theme-functions.php:323
+msgid "Unable to parse URL"
+msgstr ""
+
+#: ../functions/theme-functions.php:421
+msgid "Thumbnail"
+msgstr ""
+
+#: ../functions/theme-functions.php:445
+msgid "None"
+msgstr ""
+
+#: ../functions/theme-functions.php:529
+msgid "Main Navigation"
+msgstr ""
+
+#: ../functions/theme-functions.php:530
+msgid "Footer Navigation"
+msgstr ""
+
+#: ../functions/theme-widgets.php:116
+#: ../functions/theme-widgets.php:166
+#: ../functions/theme-widgets.php:406
+msgid "Title"
+msgstr ""
+
+#: ../functions/theme-widgets.php:118
+msgid "Number to display"
+msgstr ""
+
+#: ../functions/theme-widgets.php:135
+msgid "Dealer List"
+msgstr ""
+
+#: ../functions/theme-widgets.php:168
+msgid "number to display"
+msgstr ""
+
+#: ../functions/theme-widgets.php:185
+msgid "Latest Products"
+msgstr ""
+
+#: ../functions/theme-widgets.php:408
+msgid "Sub Title"
+msgstr ""
+
+#: ../functions/theme-widgets.php:410
+msgid "Brochure Download Url"
+msgstr ""
+
+#: ../functions/inc/template-tags.php:205
+msgid "Missing Attachment"
+msgstr ""
+
