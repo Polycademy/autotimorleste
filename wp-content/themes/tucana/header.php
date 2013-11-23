@@ -76,7 +76,7 @@
             <!-- Begin of Logo -->
             <div id="logo">
               <?php $logo = $data['main_logo']; ?>
-              <a href="<?php echo home_url();?>"><img src="<?php echo ($logo) ? $logo : get_template_directory_uri().'/images/logo.png';?>" alt="Logo"/></a>
+              <a href="<?php echo home_url();?>"><img src="<?php echo ($logo) ? $logo : get_template_directory_uri().'/images/toyota_atl_logo.png';?>" alt="Logo"/></a>
             </div>
             <!-- End of Logo -->
             

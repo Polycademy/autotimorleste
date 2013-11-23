@@ -1,4 +1,4 @@
 Auto Timor Leste Official Site
 ==============================
 
-Establish secrets to be loaded into wp-config. For database secrets and encryption key secrets.
+Probably have to run on Pagodabox for the purposes of the file system.
