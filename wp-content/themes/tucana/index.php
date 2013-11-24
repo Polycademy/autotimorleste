@@ -9,14 +9,15 @@
             
             	<!-- Begin of Content Left -->
             	<div id="main-home-left">
-                	 <?php main_delear_list("Locate Our Dealers",-1);?>
+                	 <h3>Location</h3><br />
+                   <img src="http://placehold.it/284x150&text=location+284+150" />
                 </div>
                 <!-- End of Content Left -->
                
               <!-- Begin of Content Right -->  
            	  <div id="main-home-right">
               
-                  <?php indonez_latestproducts(2,"<h3>Latest Cars</h3>");?>
+                  <h3>Company</h3>
                   
                   <div class="clr"></div>
                   
@@ -37,12 +38,12 @@
                               <img src="<?php echo $promobox1_image;?>" alt="" class="imgleft" />
                             <?php } ?>
                                 <h4><a href="<?php echo $promobox1_url;?>"><?php echo stripslashes($promobox1_title);?></a></h4>
-                                <p class="front-box-text"><?php echo stripslashes($promobox1_desc);?></p>
+                                <p class="front-box-text"><?php echo stripslashes(nl2br($promobox1_desc));?></p>
                             </li>
                         	<li class="marginoff-box">
                             	<img src="<?php echo $promobox2_image;?>" alt="" class="imgleft" />
                                 <h4><a href="<?php echo $promobox2_url;?>"><?php echo stripslashes($promobox2_title);?></a></h4>
-                                <p class="front-box-text"><?php echo stripslashes($promobox2_desc);?></p>
+                                <p class="front-box-text"><?php echo stripslashes(nl2br($promobox2_desc));?></p>
                             </li>
                         </ul>
                         <div class="clr"></div>
