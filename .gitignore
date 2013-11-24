@@ -13,7 +13,6 @@ wp-content/backup/*
 wp-content/cache/*
 wp-content/plugins/*
 wp-content/upgrade/*
-wp-content/uploads/*
 
 #################
 ## Eclipse
