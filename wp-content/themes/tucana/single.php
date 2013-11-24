@@ -16,12 +16,6 @@
               </div>
                 <!-- End of Newsflash -->
                 
-              <!-- Begin of Search -->
-            	<div id="topsearch">
-                <?php get_template_part('searchbox','tucana search box');?>  	
-              </div>
-              <!-- End of Search -->
-                
             </div>
             
             <div id="main-inner">
