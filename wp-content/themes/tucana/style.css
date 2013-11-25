@@ -140,7 +140,6 @@ ol li{
 pre{ 
   clear: both; 
   font: 11px Consolas, "Andale Mono", Courier, "Courier New", monospace; 
-  background: url(images/pre_bg.gif) repeat; 
   border: 1px solid #d3d3d3;
   padding: 18px 20px 15px 20px;
   line-height: 19px;
@@ -899,6 +898,8 @@ ul.serviceslist li.last {
 /* slideshow with thumb image */
 #img-slide{
 	height:265px;
+	width:610px;
+	margin: 0 auto;
 }
 #img-slide-large{
 	width:518px;
