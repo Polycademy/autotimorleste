@@ -10,7 +10,7 @@
             	<!-- Begin of Content Left -->
             	<div id="main-home-left">
                 	 <h3>Location</h3><br />
-                   <img src="http://placehold.it/284x150&text=location+284+150" />
+                   <img src="<? echo get_template_directory_uri() . '/images/location_atl.jpg' ?>" />
                 </div>
                 <!-- End of Content Left -->
                
