@@ -1,10 +1,4 @@
 <?php get_header();?>
-  
-  <!-- Begin of Page Title -->
-        <div id="header-inner">
-        	<h1 class="title-page"><?php single_cat_title();?></h1>
-        </div>
-        <!-- End of Page Title -->
         
         <!-- Begin of Content -->
         <div id="content">
@@ -14,17 +8,9 @@
             	<?php $page_description = get_post_meta($post->ID,'_page_short_desc',true);?>
             	<!-- Begin of Newsflash -->
             	<div id="newsflash">
-                 <?php if(category_description()) { ?>
-                  	 <h3><?php echo category_description( ); ?></h3>
-                  <?php } ?>
+                <h3><?php single_cat_title();?></h3>
               </div>
                 <!-- End of Newsflash -->
-                
-                <!-- Begin of Search -->
-              	<div id="topsearch">
-                  <?php get_template_part('searchbox','tucana search box');?>  	
-                </div>
-                <!-- End of Search -->
                 
             </div>
             

@@ -1,9 +1,4 @@
         <?php get_header();?>
-        <!-- Begin of Page Title -->
-        <div id="header-inner">
-        	<h1 class="title-page"><?php echo __('Search for ','tucana') . '"'.$s.'"';?></h1>
-        </div>
-        <!-- End of Page Title -->
         
         <!-- Begin of Content -->
         <div id="content">

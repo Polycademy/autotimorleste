@@ -1,9 +1,4 @@
         <?php get_header();?>
-        <!-- Begin pf Page Title -->
-        <div id="header-inner">
-        	<h1 class="title-page"><?php echo __('404','tucana');?></h1>
-        </div>
-        <!-- End of Page Title -->
         
         <!-- Begin of Content -->
         <div id="content">
@@ -15,27 +10,23 @@
               </div>
                 <!-- End of Newsflash -->
                 
-              <!-- Begin of Search -->
-            	<div id="topsearch">
-                <?php get_template_part('searchbox','tucana search box');?>  	
-              </div>
-              <!-- End of Search -->
-                
             </div>
             
             <div id="main-inner">
             
             	<!-- Begin of Content Left -->
-            	<div id="main-left">
+            	<div>
                 <?php $page_not_found_text = $data['page_not_found_text'];?>  
-                <h1><?php echo $page_not_found_text;?></h1>
+                <h1><?php echo nl2br($page_not_found_text);?></h1>
                 
              </div>
              <!-- End of Content Left -->
-             
-             <?php get_sidebar();?>
               
              <div class="clr"></div>
+
+             <div id="block-bottom">
+              <div class="clr"></div>
+             </div>
           </div>
           
         </div>
