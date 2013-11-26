@@ -27,7 +27,7 @@
               <?php if ($enable_slide_bg != true) {?>
             	 <li>
                 	<div class="header-left">
-                  	<h1><a href="<?php the_permalink();?>"><?php the_title();?></a></h1>
+                  	<h1><a href="<?= $slideshow_url ?>"><?php the_title();?></a></h1>
                       <p><?php echo get_the_content();?></p>
                       <div class="glow-box">
                       	<ul>
