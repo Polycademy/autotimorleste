@@ -29,7 +29,7 @@ Template Name: Services
                   $counter = 0;
                   $services_page = get_option('vulcan_services_pid');
                   $services_order = get_option('vulcan_services_order');
-                  
+
                   $servicespid = get_page_by_title($services_page);
                   $spid = ($post->ID) ? ($post->ID)  : $servicespid->id; 
                   query_posts('post_type=page&post_parent='.$spid.'&posts_per_page=-1&orderby='.$services_order);                  

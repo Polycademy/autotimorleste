@@ -73,7 +73,9 @@
 									</div>
 							 </div>
 							<div class="clr"></div>
-							<?php the_content();?>
+							<div class="entry">
+								<?php the_content();?>
+							</div>
 							<!-- End of Content Left -->
 						 <?php endwhile;?>
 						 <?php endif;?>

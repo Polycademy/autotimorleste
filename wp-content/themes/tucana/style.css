@@ -20,8 +20,8 @@ body{
 	padding:0;
 	margin:0;
 	font-family:Arial, Verdana;
-	font-size:12px;
-	color:#b5b5b5;
+	font-size:14px;
+	color:#999999;
 	line-height:18px;
 }
 
@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6{
 	color:#868686;
 	margin-bottom:15px;
 	font-weight:normal;
-  font-family:'Nunito', sans-serif, Arial, Verdana;
+  font-family:Arial, Verdana;
   letter-spacing: -1px;
 }
 h1{font-size:32px;line-height:34px;font-weight:bold;color:#585858;}
@@ -2055,6 +2055,7 @@ ul.itemlist  li {
 .tabs-wrapper {
   margin: 15px 0;
 }
+
 ul.tabs {
 	margin:0px 0px 0px 1px;
 	padding: 0;
@@ -2121,7 +2122,6 @@ html ul.tabs li.current, html ul.tabs li.current a:hover  {
 	border: 1px solid #dbdbdb;
 	border-top: none;
 	clear: both;
-	float: left; 
 	width: auto;
 	background: #fff;
   width: 100%;
