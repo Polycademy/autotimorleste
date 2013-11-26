@@ -3,23 +3,42 @@ Auto Timor Leste Official Site
 
 Official site of Auto Timor Leste - Toyota Timor Leste
 
-Post Deploy Configuration
--------------------------
+Deploy
+-----
 
-1 .Filesystem Synchronisation:
+Add Pagoda Remote. Push to Pagoda.
 
-SCP/FTP between wp-content/uploads
-SCP/FTP between secrets
+```
+git remote add pagoda git@git.pagodabox.com:autotimorleste.git
+git push pagoda --all
+```
 
+Post Deploy Synchronisation
+---------------------------
+
+1. Filesystem Synchronisation:
+   
+   SCP between wp-content/uploads & secrets
+   
 2. Database Synchronisation:
 
-Wordpress migrate plugin
+   Wordpress database migration plugin via Tools > Migrate DB. From the current address, add the remote address domain **but without the trailing slash**. For example:
 
-3. Links Synchronisation:
+   ```
+   #From Local to Remote:
+   http://localhost/autotimorleste -> http://autotimorleste.gopagoda.com
+   #From Remote to Local:
+   http://autotimorleste.gopagoda.com -> http://localhost/autotimorleste
+   ```
 
-Also make sure the New Cars and Used Cars category urls point to the correct location in production/development. They are hardcoded links in the Appearance > Menu > New Cars & Appearance > Menu > Used Cars
+   The New File Path is irrelevant, it can be left as '/'. Don't replace GUIDs once the site is live. Upload the database export. It works even when the tables still exist. You can connect to the database via ssh tunnelling (http://help.pagodabox.com/customer/portal/articles/175427).
+
+   ```
+   pagoda tunnel -c db1
+   autotimorleste
+   ```
 
 Notes
 -----
 
-Also shortcodes such as tables, buttons and accordions can be found here: http://wp-demo.indonez.com/Tucana/shortcodes/
+Shortcodes such as tables, buttons and accordions can be found here: http://wp-demo.indonez.com/Tucana/shortcodes/
