@@ -1,0 +1,48 @@
+global:
+  env:
+    - WP_ENV: production
+web1:
+  name: autotimorleste
+  php_version: 5.4.14
+  php_date_timezone: "Asia/Dili"
+  php_upload_max_filesize: "8M"
+  php_display_errors: "1"
+  php_short_open_tag: "1"
+  php_error_log: true
+  apache_error_log: true
+  php_fpm_log: true
+  php_extensions:
+    - mysql
+    - mysqli
+    - pdo_mysql
+    - curl 
+    - filter
+    - dom
+    - json
+    - gd
+    - ctype
+    - imagick
+    - session
+    - ftp
+    - zip
+    - mcrypt
+    - hash
+    - iconv
+    - xml
+    - xmlreader
+    - xmlwriter
+    - sockets
+    - simplexml
+    - tokenizer
+    - mbstring
+  zend_extensions:
+    - xdebug
+  shared_writable_dirs:
+    - secrets
+    - wp-content/uploads
+  after_build:
+    - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
+    - php -r "file_put_contents('wp-config.php', str_replace('define(\'ENVIRONMENT\', isset(\$_SERVER[\'WP_ENV\']) ? \$_SERVER[\'WP_ENV\'] : \'development\');', 'define(\'ENVIRONMENT\', isset(\$_SERVER[\'WP_ENV\']) ? \$_SERVER[\'WP_ENV\'] : \'production\');', file_get_contents('wp-config.php')));"
+db1:
+  name: autotimorleste
+  type: mysql

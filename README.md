@@ -1,12 +1,25 @@
 Auto Timor Leste Official Site
 ==============================
 
-Probably have to run on Pagodabox for the purposes of the file system.
+Official site of Auto Timor Leste - Toyota Timor Leste
 
-Remember to copy paste the wp-content/uploads over via scp/ftp always.
+Post Deploy Configuration
+-------------------------
 
-Bring in the secret keys from secret repository.
+1 .Filesystem Synchronisation:
+
+SCP/FTP between wp-content/uploads
+SCP/FTP between secrets
+
+2. Database Synchronisation:
+
+Wordpress migrate plugin
+
+3. Links Synchronisation:
+
+Also make sure the New Cars and Used Cars category urls point to the correct location in production/development. They are hardcoded links in the Appearance > Menu > New Cars & Appearance > Menu > Used Cars
+
+Notes
+-----
 
 Also shortcodes such as tables, buttons and accordions can be found here: http://wp-demo.indonez.com/Tucana/shortcodes/
-
-Also make sure the New Cars and Used Cars category urls are correct on the menu in production.

@@ -1,6 +1,6 @@
 <?php
 
-define('ENVIRONMENT', 'development');
+define('ENVIRONMENT', isset($_SERVER['WP_ENV']) ? $_SERVER['WP_ENV'] : 'development');
 
 /**
  * Automatic Url + Content Dir/Url Detection for Wordpress
