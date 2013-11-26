@@ -23,7 +23,8 @@
 	"require":{
 		"php": ">=5.3.0",
 		"wordpress": "3.7.1",
-		"wpackagist/wp-migrate-db": "0.5"
+		"wpackagist/wp-migrate-db": "0.5",
+		"wpackagist/disable-comments": "1.0.1"
 	},
 	"config": {
 		"bin-dir": "bin/",
