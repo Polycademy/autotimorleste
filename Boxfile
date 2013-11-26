@@ -42,7 +42,7 @@ web1:
     - wp-content/uploads
   after_build:
     - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
-    - php -r "file_put_contents('wp-config.php', str_replace('define(\'ENVIRONMENT\', isset(\$_SERVER[\'WP_ENV\']) ? \$_SERVER[\'WP_ENV\'] : \'development\');', 'define(\'ENVIRONMENT\', isset(\$_SERVER[\'WP_ENV\']) ? \$_SERVER[\'WP_ENV\'] : \'production\');', file_get_contents('wp-config.php')));"
+    - 'php -r "file_put_contents(''wp-config.php'', str_replace(''define(\''ENVIRONMENT\'', isset($_SERVER[\''WP_ENV\'']) ? $_SERVER[\''WP_ENV\''] : \''development\'');'', ''define(\''ENVIRONMENT\'', isset($_SERVER[\''WP_ENV\'']) ? $_SERVER[\''WP_ENV\''] : \''production\'');'', file_get_contents(''wp-config.php'')));"'
 db1:
   name: autotimorleste
   type: mysql
