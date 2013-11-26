@@ -1,9 +1,5 @@
         <?php get_header();?>
-        <!-- Begin of Page Title -->
-        <div id="header-inner">
-        	<h1 class="title-page"><?php single_cat_title();?></h1>
-        </div>
-        <!-- End of Page Title -->
+
         
         <!-- Begin of Content -->
         <div id="content">
@@ -14,12 +10,6 @@
                 <h4><?php echo __("Archive for ",'tucana');?> <?php echo '"';?><?php single_cat_title();?><?php echo '"';?></h4>
               </div>
                 <!-- End of Newsflash -->
-                
-                <!-- Begin of Search -->
-            	<div id="topsearch">
-                	<?php get_template_part('searchbox','tucana search box');?>
-                </div>
-                <!-- End of Search -->
                 
             </div>
             
