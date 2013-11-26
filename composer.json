@@ -24,7 +24,9 @@
 		"php": ">=5.3.0",
 		"wordpress": "3.7.1",
 		"wpackagist/wp-migrate-db": "0.5",
-		"wpackagist/disable-comments": "1.0.1"
+		"wpackagist/disable-comments": "1.0.1",
+		"wpackagist/wp-toolbar-removal": "2013.0624.0361",
+		"wpackagist/wordpress-seo": "1.4.19"
 	},
 	"config": {
 		"bin-dir": "bin/",

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "622298a203b6c037953917ed434d6aed",
+    "hash": "521001792645bae5cbec68fd974ea2b1",
     "packages": [
         {
             "name": "composer/installers",
@@ -151,6 +151,21 @@
             "homepage": "http://wordpress.org/extend/plugins/disable-comments"
         },
         {
+            "name": "wpackagist/wordpress-seo",
+            "version": "1.4.19",
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.4.19.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/extend/plugins/wordpress-seo"
+        },
+        {
             "name": "wpackagist/wp-migrate-db",
             "version": "0.5",
             "dist": {
@@ -164,6 +179,21 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/extend/plugins/wp-migrate-db"
+        },
+        {
+            "name": "wpackagist/wp-toolbar-removal",
+            "version": "2013.0624.0361",
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wp-toolbar-removal.2013.0624.0361.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/extend/plugins/wp-toolbar-removal"
         }
     ],
     "packages-dev": [
