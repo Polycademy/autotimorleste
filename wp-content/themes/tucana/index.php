@@ -41,9 +41,11 @@
                                 <p class="front-box-text"><?php echo stripslashes(nl2br($promobox1_desc));?></p>
                             </li>
                         	<li class="marginoff-box">
+                            <?php if ($promobox2_image) { ?>
                             	<img src="<?php echo $promobox2_image;?>" alt="" class="imgleft" />
-                                <h4><a href="<?php echo $promobox2_url;?>"><?php echo stripslashes($promobox2_title);?></a></h4>
-                                <p class="front-box-text"><?php echo stripslashes(nl2br($promobox2_desc));?></p>
+                            <?php } ?>
+                              <h4><a href="<?php echo $promobox2_url;?>"><?php echo stripslashes($promobox2_title);?></a></h4>
+                              <p class="front-box-text"><?php echo stripslashes(nl2br($promobox2_desc));?></p>
                             </li>
                         </ul>
                         <div class="clr"></div>
