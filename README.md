@@ -9,7 +9,7 @@ Deploy
 Add Pagoda Remote. Push to Pagoda.
 
 ```
-git remote add pagoda git@git.pagodabox.com:autotimorleste.git
+git remote add pagoda git@git.pagodabox.io:apps/autotimorleste.git
 git push pagoda --all
 ```
 
@@ -18,7 +18,23 @@ Post Deploy Synchronisation
 
 1. Filesystem Synchronisation:
    
-   SCP between wp-content/uploads & secrets
+   Download the current state of uploads.
+
+   ```
+   rsync -chavzP --stats user@remote:/path/to/remote/wp-content/uploads /path/to/local/wp-content/uploads
+   ```
+
+   Upload the current state of uploads.
+
+   ```
+   rsync -chavzP --stats /path/to/local/wp-content/uploads user@remote:/path/to/remote/wp-content/uploads
+   ```
+
+   Upload the current secrets.
+
+   ```
+   rsync -chavzP --stats /path/to/local/secrets user@remote:/path/to/remote/secrets
+   ```
    
 2. Database Synchronisation:
 
