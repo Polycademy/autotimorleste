@@ -13,6 +13,8 @@ git remote add pagoda git@git.pagodabox.io:apps/autotimorleste.git
 git push pagoda --all
 ```
 
+Make sure both Network Storage and Database Service have SSH enabled.
+
 Post Deploy Synchronisation
 ---------------------------
 
@@ -21,19 +23,19 @@ Post Deploy Synchronisation
    Download the current state of uploads.
 
    ```
-   rsync -chavzP --stats user@remote:/path/to/remote/wp-content/uploads /path/to/local/wp-content/uploads
+   rsync -chavzP --stats --rsh='ssh -p2768' gopagoda@remote:~/data/wp-content/uploads/ /path/to/local/wp-content/uploads/
    ```
 
    Upload the current state of uploads.
 
    ```
-   rsync -chavzP --stats /path/to/local/wp-content/uploads user@remote:/path/to/remote/wp-content/uploads
+   rsync -chavzP --stats --rsh='ssh -p2768' /path/to/local/wp-content/uploads/ gopagoda@remote:~/data/wp-content/uploads/
    ```
 
    Upload the current secrets.
 
    ```
-   rsync -chavzP --stats /path/to/local/secrets user@remote:/path/to/remote/secrets
+   rsync -chavzP --stats --rsh='ssh -p2768' /path/to/local/secrets/ gopagoda@remote:~/data/secrets/
    ```
    
 2. Database Synchronisation:
@@ -42,17 +44,22 @@ Post Deploy Synchronisation
 
    ```
    #From Local to Remote:
-   http://localhost/autotimorleste -> http://autotimorleste.gopagoda.com
+   http://localhost/autotimorleste -> http://autotimorleste.gopagoda.io
    #From Remote to Local:
-   http://autotimorleste.gopagoda.com -> http://localhost/autotimorleste
+   http://autotimorleste.gopagoda.io -> http://localhost/autotimorleste
    ```
 
-   The New File Path is irrelevant, it can be left as '/'. Don't replace GUIDs once the site is live. Upload the database export. It works even when the tables still exist. You can connect to the database via ssh tunnelling (http://help.pagodabox.com/customer/portal/articles/175427).
+   The New File Path is irrelevant, it can be left as '/'. Don't replace GUIDs once the site is live. 
+
+   We can now upload the database export. First we need to establish a SSH tunnel to local database instance (get the IP and remote from the database instance on the dashboard).
 
    ```
-   pagoda tunnel -c db1
-   autotimorleste
+   ssh gopagoda@remote -p 2806 -N -L :3306:IP:3306
    ```
+
+   Then connect to the database on port `localhost:3306`.
+
+   Use the correct database name. Load the exported SQL.
 
 Notes
 -----
