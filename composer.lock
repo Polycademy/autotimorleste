@@ -1,30 +1,32 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "521001792645bae5cbec68fd974ea2b1",
+    "hash": "3996372af8d83a05af768fb2c8f63890",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.7",
+            "version": "v1.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c"
+                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d792632d27e1980d921cbbba12eab7b888338d4c",
-                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
                 "shasum": ""
             },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.1.*"
             },
             "type": "composer-installer",
             "extra": {
@@ -46,38 +48,58 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
-                    "role": "Developer"
+                    "homepage": "https://github.com/shama"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "TYPO3 CMS",
-                "TYPO3 Flow",
-                "TYPO3 Neos",
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
                 "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
                 "cakephp",
+                "chef",
                 "codeigniter",
                 "concrete5",
+                "croogo",
+                "dokuwiki",
                 "drupal",
+                "elgg",
                 "fuelphp",
+                "grav",
                 "installer",
                 "joomla",
                 "kohana",
                 "laravel",
-                "li3",
                 "lithium",
+                "magento",
                 "mako",
+                "mediawiki",
                 "modulework",
+                "moodle",
                 "phpbb",
+                "piwik",
                 "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
                 "silverstripe",
                 "symfony",
+                "typo3",
                 "wordpress",
-                "zend"
+                "zend",
+                "zikula"
             ],
-            "time": "2013-10-24 16:13:49"
+            "time": "2015-02-18 17:17:01"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -196,20 +218,14 @@
             "homepage": "http://wordpress.org/extend/plugins/wp-toolbar-removal"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.0"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }

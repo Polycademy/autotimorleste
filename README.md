@@ -1,12 +1,12 @@
 Auto Timor Leste Official Site
 ==============================
 
-Official site of Auto Timor Leste - Toyota Timor Leste
+Official site of Auto Timor Leste - Toyota Timor Leste (http://autotimorlestetoyota.com)
 
 Deploy
 -----
 
-Add Pagoda Remote. Push to Pagoda.
+Add Pagoda Remote. Push to Pagoda. (Make sure your SSH key is added to Pagodabox.)
 
 ```
 git remote add pagoda git@git.pagodabox.io:apps/autotimorleste.git
